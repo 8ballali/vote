@@ -20,13 +20,8 @@ Route::get('/registrasi', function () {
 Route::get('/syarat', function () {
     return view('syarat');
 });
-Route::get('/visi1', function () {
+Route::get('/visi1/{id}', function () {
     return view('visi1');
 });
-Route::get('/visi2', function () {
-    return view('visi2');
-});
-Route::get('/visi3', function () {
-    return view('visi3');
-});
-Route::get('contoh', 'HomeController@test');
+Route::post('voting', 'HomeController@test');
+// Route::get('contoh', 'HomeController@test');

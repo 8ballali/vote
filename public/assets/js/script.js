@@ -1,3 +1,8 @@
+$.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
 $(".slider").owlCarousel({
     margin: 20,
     loop: false,
@@ -42,12 +47,20 @@ $(".slider").owlCarousel({
     Swal.fire({
       title : 'Masukkan kode pemilihan',
       input : 'text'
-    }).then(function(text) {
-      Swal.fire({
-      title:  'Voting anda telah masuk',
-      icon :  'success'
-      })
-    })
+    }).then(function(data) {
+        $.ajax({
+            url: "voting",
+            type: 'post',
+            data:{
+                code: data.value
+            }
+        }).done(function() {
+            Swal.fire({
+            title:  'Voting anda telah masuk',
+            icon :  'success'
+            });
+        });
+    });
   });
 
   $("form").on("change", ".file-upload-field", function(){

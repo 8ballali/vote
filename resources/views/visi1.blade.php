@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -53,7 +54,7 @@
             <h2 class="mt-5">Profil</h2>
             <p>Kenali Kandidatmu Sebelum memilih</p>
           </div>
-  
+
           <div class="row">
             <div class="col-lg-4">
               <img src="images/satu.jpg" class="img-fluid" alt="">
@@ -74,18 +75,18 @@
                     <li><i class="bi bi-chevron-right"></i> <strong>Telepon             :</strong> <span>+062123112314</span></li>
                 </div>
               </div>
-  
-              
+
+
         </div>
       </div>
         </section>
         <div class="section-title mt-5">
                 <h2>Visi</h2>
-                <p>KOSMOS merupakan wadah Persatuan tempat berkumpulnya Komunitas Mobil yang ada di Semarang , 
-                  dengan tujuan yg sama yaitu ingin menjalin hubungan persaudaraan tanpa batas dan berbagi informasi antar 
+                <p>KOSMOS merupakan wadah Persatuan tempat berkumpulnya Komunitas Mobil yang ada di Semarang ,
+                  dengan tujuan yg sama yaitu ingin menjalin hubungan persaudaraan tanpa batas dan berbagi informasi antar
                   club/komunitas mobil di Semarang dengan kegiatannya di masing2 club/komunitas tersebut.</p>
                 </div>
-  
+
             <div class="section-title mt-5">
             <h2>Misi</h2>
             </div>
@@ -96,7 +97,7 @@
                 <li class="list-group-item">Menyelenggarakan Perlombaan</li>
                 <li class="list-group-item">Mengadakan Pameran Mobil</li>
               </ul>
-           
+
           <center>
             <button id="click" type="button" class="btn btn-outline-warning mt-5 mb-5" style="color:white; background-color: orangered;">Vote</button>
         </center>
@@ -104,4 +105,4 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
     </div>
     </body>
-    </html>  
+    </html>

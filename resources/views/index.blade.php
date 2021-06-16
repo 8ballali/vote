@@ -49,7 +49,7 @@
                 @foreach ($p->candidate as $c)
                 <div class="card">
                     <div class="img">
-                        <a href="/visi1"><img src="images/satu.jpg" alt=""></a>
+                        <a href="{{url('visi1')}}"><img src="images/satu.jpg" alt=""></a>
                     </div>
                     <div class="content">
                         <div class="title">

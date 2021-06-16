@@ -12,8 +12,9 @@ class HomeController extends Controller
         return view('index', compact('poling'));
     }
 
-    public function test()
+    public function test(Request $request)
     {
-        return view('index');
+        $code = $request->code;
+        return $code;
     }
 }
