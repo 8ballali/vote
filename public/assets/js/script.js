@@ -1,6 +1,6 @@
 $(".slider").owlCarousel({
     margin: 20,
-    loop: true,
+    loop: false,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
@@ -19,7 +19,7 @@ $(".slider").owlCarousel({
       }
     }
   });
-  
+
   $('.brand-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -37,7 +37,7 @@ $(".slider").owlCarousel({
       }
     }
   });
-  
+
   $('#click').on('click',function(){
     Swal.fire({
       title : 'Masukkan kode pemilihan',
@@ -48,8 +48,8 @@ $(".slider").owlCarousel({
       icon :  'success'
       })
     })
-  }); 
-  
+  });
+
   $("form").on("change", ".file-upload-field", function(){
     $(this).parent(".file-upload-wrapper").attr("data-text",$(this).val().replace(/.*(\/|\\)/,''));
 });

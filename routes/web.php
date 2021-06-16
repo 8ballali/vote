@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index');
 Route::get('/registrasi', function () {
     return view('registrasi');
 });
@@ -31,3 +29,4 @@ Route::get('/visi2', function () {
 Route::get('/visi3', function () {
     return view('visi3');
 });
+Route::get('contoh', 'HomeController@test');
